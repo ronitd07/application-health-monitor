@@ -6,7 +6,7 @@ class Handler(BaseHTTPRequestHandler):
     def do_GET(self):
         if self.path == "/health":
             status = 200
-            response = {"status": "healthy"}
+            response = {"status": "health"}
 
         elif self.path == "/version":
             status = 200
