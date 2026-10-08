@@ -33,7 +33,7 @@ class TestApp(unittest.TestCase):
             self.assertEqual(response.status, 200)
             self.assertEqual(
                 json.load(response),
-                {"status": "healthy"},
+                {"status": "health"},
             )
 
     def test_version(self):
